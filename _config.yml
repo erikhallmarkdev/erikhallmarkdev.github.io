@@ -31,7 +31,7 @@ gems:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
-  # - octopress-autoprefixer
+  - octopress-autoprefixer
 exclude:
   - Gemfile
   - Gemfile.lock
