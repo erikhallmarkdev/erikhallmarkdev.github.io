@@ -5,6 +5,7 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% feed_meta %}
+  {% seo %}
   <!-- <meta name="description" content="{{ page.excerpt | strip_html | truncate: 140}}"/> -->
 
   <meta name="description" content="{% if page.description %} {{ page.description }} {% else %} {{ site.description }} {% endif %}"/>
