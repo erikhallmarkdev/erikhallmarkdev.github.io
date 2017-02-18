@@ -25,4 +25,5 @@ group :jekyll_plugins do
    gem "jekyll-paginate", "1.1.0"
    gem "octopress-autoprefixer"
    gem "jekyll-sitemap"
+   gem "jekyll-seo-tag"
 end

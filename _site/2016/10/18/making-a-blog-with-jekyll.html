@@ -6,6 +6,26 @@
   <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Taviraj" rel="stylesheet">
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Erik Hallmark" />
+  <!-- Begin Jekyll SEO tag v2.1.0 -->
+<title>Making a blog with Jekyll - Erik Hallmark</title>
+<meta property="og:title" content="Making a blog with Jekyll" />
+<meta name="description" content="A few weeks ago I started playing arround with the idea of starting a blog, I could have gone the simple route and used a service like Blogger or Tumblr. Instead I decided that I wanted to make a blog from scratch, that way I could have complete control over the code. The first thing I noted is that renting a server is expensive, so avoiding that cost was a priority, enter Github Pages. Pages isn&#39;t much, it&#39;s a simple static website hosting service from the good people at Github, but that simple service is all that I need" />
+<meta property="og:description" content="A few weeks ago I started playing arround with the idea of starting a blog, I could have gone the simple route and used a service like Blogger or Tumblr. Instead I decided that I wanted to make a blog from scratch, that way I could have complete control over the code. The first thing I noted is that renting a server is expensive, so avoiding that cost was a priority, enter Github Pages. Pages isn&#39;t much, it&#39;s a simple static website hosting service from the good people at Github, but that simple service is all that I need" />
+<link rel="canonical" href="http://localhost:4000/2016/10/18/making-a-blog-with-jekyll.html" />
+<meta property="og:url" content="http://localhost:4000/2016/10/18/making-a-blog-with-jekyll.html" />
+<meta property="og:site_name" content="Erik Hallmark" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-10-18T11:20:00-07:00" />
+<script type="application/ld+json">
+{"@context": "http://schema.org",
+"@type": "BlogPosting",
+"headline": "Making a blog with Jekyll",
+"datePublished": "2016-10-18T11:20:00-07:00",
+"description": "A few weeks ago I started playing arround with the idea of starting a blog, I could have gone the simple route and used a service like Blogger or Tumblr. Instead I decided that I wanted to make a blog from scratch, that way I could have complete control over the code. The first thing I noted is that renting a server is expensive, so avoiding that cost was a priority, enter Github Pages. Pages isn&#39;t much, it&#39;s a simple static website hosting service from the good people at Github, but that simple service is all that I need",
+"url": "http://localhost:4000/2016/10/18/making-a-blog-with-jekyll.html"}</script>
+<!-- End Jekyll SEO tag -->
+
   <!-- <meta name="description" content="A few weeks ago I started playing arround with the idea
 of starting a blog, I could have gone the simple route and used a service like
 Bl..."/> -->
@@ -44,8 +64,8 @@ Bl..."/> -->
 
     <nav id="nav-desktop">
       <a class="navItem-desktop" href="/">Home</a>
-      <a class="navItem-desktop" href="/stuff.html">Stuff</a>
-      <a class="navItem-desktop" href="/contact.html">Contact</a>
+      <a class="navItem-desktop" href="/creations">Creations</a>
+      <a class="navItem-desktop" href="/contact">Contact</a>
       <a href="/feed.xml" class="rss-button">
   <img class="rss-image" alt="Subscribe via RSS" src="/img/feed-icon-28x28.png"/>
 </a>
@@ -56,8 +76,8 @@ Bl..."/> -->
 
     <nav id="nav-mobile">
       <a class="navItem-mobile" href="/">Home</a>
-      <a class="navItem-mobile" href="/stuff.html">Stuff</a>
-      <a class="navItem-mobile" href="/contact.html">Contact</a>
+      <a class="navItem-mobile" href="/creations">Creations</a>
+      <a class="navItem-mobile" href="/contact">Contact</a>
 
     </nav>
   </div>
@@ -106,8 +126,8 @@ which I use for the prefixing on this site. </p>
   That's it. After that you have a server running at the adress specified in the
   terminal output(Normally 127.0.0.1:4000). This server will automaticly rebuild
   the site if you change a file. When you want to build the site for deployment
-  I'd suggest you use <span class="snippet">jekyll build</span>, it builds the URLS
-  base off of your <span class="snippet">_config.yml</span> file, instead of localhost.
+  I'd suggest you use <span class="snippet">jekyll build</span>, it builds the URLs
+  based off of your <span class="snippet">_config.yml</span> file, instead of localhost.
 </p>
 
 <p class="post-paragraph">Once you have the basic site setup, it's pretty simple to
@@ -174,7 +194,7 @@ files, you can also use Markdown, or a number of other languages are avalible vi
       <script>
 
         var disqus_config = function () {
-        this.page.url = "http://erikhallmark.com//2016/10/18/making-a-blog-with-jekyll.html";
+        this.page.url = "http://localhost:4000/2016/10/18/making-a-blog-with-jekyll.html";
         this.page.identifier = "/2016/10/18/making-a-blog-with-jekyll.html";
         };
 

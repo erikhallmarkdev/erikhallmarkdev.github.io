@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gradient slicer</title> 
+  </head>
+   <body>
+    Color 1(hex): <input type="text" id="color1Input"><br><br>
+    Color 2(hex): <input type="text" id="color2Input"><br><br>
+    Slice  : <input type="number" id="sliceSizeInput"><br><br> 
+    <button onclick="computeValues()">Compute gradient values</button>
+    
+    <p id="colorList"></p>
+    
+    <canvas id="c"></canvas>
+    
+    <script>
+     /*Got this from https://gist.github.com/rosszurowski/67f04465c424a9bc0dae*/
+      var c = document.getElementById('c'),
+          ctx = c.getContext('2d');
+
+
+      function computeValues(){
+        var color1 = document.getElementById('color1Input').value;
+        var color2 = document.getElementById('color2Input').value;
+                
+        if(color1.charAt(0) != "#") 
+          color1 = "#" + color1;
+        
+        if(color2.charAt(0) != "#") 
+          color2 = "#" + color2;
+        
+        var sliceSize = document.getElementById('sliceSizeInput').value;
+        var colors = [];
+        
+        setGradient(color1, color2);
+        
+        //console.log(ctx.getImageData(10, 10, 1, 1));
+        
+        
+      
+        for(var x = 0; x <= sliceSize; x++){
+          var rgb = {
+            r: ctx.getImageData((x/sliceSize) * (c.width - 1), 1, 1, 1).data[0],
+            g: ctx.getImageData((x/sliceSize) * (c.width - 1), 1, 1, 1).data[1],
+            b: ctx.getImageData((x/sliceSize) * (c.width - 1), 1, 1, 1).data[2]
+          }
+          
+          ctx.fillStyle = "red";
+          ctx.fillRect((x/sliceSize) * (c.width - 1), 1, 5, c.height);
+          
+          
+          console.log("RGB: ", rgb);
+          colors[colors.length] = rgb2Hex(rgb.r, rgb.g, rgb.b);
+        }
+        
+        console.log(colors);
+        document.getElementById('colorList').textContent = colors;
+        
+      }
+      
+      function setGradient(colorA, colorB){
+        
+        var grd = ctx.createLinearGradient(0, 0, c.width, 0);
+        grd.addColorStop(0, colorA);
+        grd.addColorStop(1, colorB);
+        
+        ctx.fillStyle = grd;
+        ctx.fillRect(0, 0, c.width, c.height);
+        
+      }
+
+      function rgb2Hex(r, g, b){
+        
+        return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+        
+        function componentToHex(c){
+          var hex = c.toString(16);
+          return hex.length == 1 ? "0" + hex : hex;
+        }
+      }
+      
+
+
+     </script>
+  </body>
+</html>
