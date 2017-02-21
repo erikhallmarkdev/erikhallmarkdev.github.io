@@ -1,5 +1,114 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://erikhallmark.com//feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://erikhallmark.com//feed.xml" rel="self" type="application/atom+xml" /><link href="http://erikhallmark.com//" rel="alternate" type="text/html" /><updated>2016-10-26T16:53:27-07:00</updated><id>http://erikhallmark.com///</id><title type="html">Erik Hallmark</title><subtitle>This is where I talk about me and the weird stuff I do. It's worth a look.
-</subtitle><entry><title type="html">Making a blog with Jekyll</title><link href="http://erikhallmark.com//2016/10/18/making-a-blog-with-jekyll.html" rel="alternate" type="text/html" title="Making a blog with Jekyll" /><published>2016-10-18T11:20:00-07:00</published><updated>2016-10-18T11:20:00-07:00</updated><id>http://erikhallmark.com//2016/10/18/making-a-blog-with-jekyll</id><content type="html" xml:base="http://erikhallmark.com//2016/10/18/making-a-blog-with-jekyll.html">&lt;p class=&quot;post-paragraph&quot;&gt;A few weeks ago I started playing arround with the idea
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-02-21T14:28:12-08:00</updated><id>http://localhost:4000//</id><title type="html">Erik Hallmark</title><subtitle>This is where I talk about me and the weird stuff I do. It's worth a look.
+</subtitle><entry><title type="html">Inroducing Envy</title><link href="http://localhost:4000/2017/02/18/Envy.html" rel="alternate" type="text/html" title="Inroducing Envy" /><published>2017-02-18T10:00:00-08:00</published><updated>2017-02-18T10:00:00-08:00</updated><id>http://localhost:4000/2017/02/18/Envy</id><content type="html" xml:base="http://localhost:4000/2017/02/18/Envy.html">&lt;p class=&quot;post-paragraph&quot;&gt;Envy is a simple node/value configuration language I started developing about a week ago for
+a project that I'm working on. It's a simple text-based language that offers a relatively simple simple syntax for
+creationg configuration documents. It can store booleans, numbers, and strings, and stores them in a hierarchical 
+data structure that is very simple to understand. &lt;a class=&quot;post-link&quot; href=&quot;/stuff/envy&quot;&gt;Offical page&lt;/a&gt; &lt;/p&gt;
+
+&lt;h4&gt;But why?&lt;/h4&gt;
+&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;
+&lt;p class=&quot;post-paragraph&quot;&gt;I know what you're likely thinking, &lt;a class=&quot;post-link&quot; href=&quot;https://xkcd.com/927/&quot;&gt;why create another standard?&lt;/a&gt;
+The answer to that is a very simple one, I wanted experience, this language was not one created out of
+necessity. I could easily have used XML or JSON, and they would have worked perfectly well. That being said, I created
+Envy because it's something that I've never done before. I had never designed and created a language before,
+and although it's likely never going to be more that just another odd project that I have sitting around doing nothing,
+it's going to be another set of things I've learned, and it's proof that I've learned these things. Sometimes 
+programmers don't create things because they need to be created, sometimes programmers create things because they 
+want to make them.&lt;/p&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;I don't want anyone thinking I have delusions of grandeur about this project,
+I know it's not going to be running on every computer in the world, I know that it will likely never be used outside of
+software that I write. But nonetheless, I enjoyed making it, and I learned a lot in the process of making it. 
+Learning is one of the most important parts of being a programmer, or just being a person in general.
+I think that constant acquisition of knowledge is very important, and programming happens to be a field
+where the best way to learn is to do. If you want to learn how something is done, you can read all the books
+on the subject that you want to, but until you touch finger to key, all you know is the theory.
+You can't learn to drive a car from a book, and the same is true of programming, programming something
+that can only be learned through success, and more importantly failure.&lt;/p&gt;
+
+&lt;h4&gt;What's next?&lt;/h4&gt;
+&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;
+&lt;p class=&quot;post-paragraph&quot;&gt;I'm currently thinking about doing some cool things with the Envy language, I might
+as well use this odd thing I've created. I have plans for a .NET serializer, and a model/animation language for
+&lt;a class=&quot;post-link&quot; href=&quot;https://unity3d.com&quot;&gt;Unity&lt;/a&gt;. I also have plans to create libraries for serveral other
+langauges, at this point only a C# version has been made, since I made it to use in a Unity project. I also think
+it could be fun to play around with making a U.I. framework that uses Envy for layouts and styling. I'm sure there's 
+a lot more than Envy could do as well. &lt;/p&gt;
+
+&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;If you have any thoughts about projects to make with Envy, or improvements to make to the language itself
+leave them in the comment section below, I'd love to hear about them.&lt;/p&gt;</content><author><name>Erik Hallmark</name></author><summary type="html">Envy is a simple node/value configuration language I started developing about a week ago for
+a project that I'm working on. It's a simple text-based language that offers a relatively simple simple syntax for
+creationg configuration documents. It can store booleans, numbers, and strings, and stores them in a hierarchical 
+data structure that is very simple to understand. Offical page</summary></entry><entry><title type="html">Frameworks are awesome… but</title><link href="http://localhost:4000/2016/11/26/Frameworks-Are-Awesome.html" rel="alternate" type="text/html" title="Frameworks are awesome... but" /><published>2016-11-26T05:15:00-08:00</published><updated>2016-11-26T05:15:00-08:00</updated><id>http://localhost:4000/2016/11/26/Frameworks-Are-Awesome</id><content type="html" xml:base="http://localhost:4000/2016/11/26/Frameworks-Are-Awesome.html">&lt;p class=&quot;post-paragraph&quot;&gt;I would assume most people reading this blog know what
+a framework is, but in case you don't let me explain. A framework is pretty much
+what it sounds like, it gives developers scaffolding for making applications.
+For my examples I will be using the the &lt;a class=&quot;post-link&quot; href=&quot;https://www.qt.io/&quot;&gt;Qt Framework&lt;/a&gt;,
+Qt is a framework for creating cross-platoform GUI applications it offers utilies for things
+such as managing windows, reading &amp;amp; writing files, accesssing the internet, drawing GUIs,
+and much much more. I use Qt whenever I want to quickly create an application, because it make the more
+repetitive parts of programming much faster and easier. But if need be I could create
+applications with the same functionality without the framework, and in my opinion
+that's a very important thing to be able to do.&lt;/p&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;Frameworks are fantastic tools for developers
+to quickly create applications, and if you're creating any large application
+I'd highly suggest that you use one. But I see a lot of new developers making a big
+mistake with frameworks, and I made this same mistake when I started out, they think
+that a framework is a tool for doing something that they don't know how to do.
+That simply isn't what a framework is, a framework is a tool for making the process
+of building applications faster and less monotonous. A framework should never be used
+in lieu of knowledge, but as an extention of it.&lt;/p&gt;
+
+
+&lt;h4&gt;Why should I know how a framwork works?&lt;/h4&gt;
+&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;In my opinion a developer should know how every single line of
+code in their project works, all the way down to the CPU instructions. Most
+developers probably don't need to be as fastidious as that, but knowing how the tools
+you're using work is pretty important. First of all it helps with debugging,
+if you're having a problem with your code that you can track down to the framework
+you're using, it helps to have an idea of how the framework is working under the hood.
+Secondly, if you know how a framework functions, you can choose more efficent ways
+of doing things, and efficiency is key in any large application.&lt;/p&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;Other than making the process of building applications
+faster, knowing how a framework works gives you a big advantage in the job market.
+Companies want to hire the best, and if you can show a large quanity of knowledge
+you will be able to show that you are amongst the best.&lt;/p&gt;
+
+&lt;h4&gt;Why use a framework if I already know how to do this stuff?&lt;/h4&gt;
+&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;Frameworks can be big, like really big, and they need to
+constantly updated to keep in line the with latest standards, security protocols, new platform
+features, bug fixes, and innumerable other reasons. So they're not exactly the type
+of thing most developers want to take on for themselves.&lt;/p&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;Beyond the complexity of maintaining a framework, another
+reason to use one made by other people is, they're probably better programmers.
+Just because I could build a multi-platform GUI application without a framework
+doesn't mean that I should, because it would probably be riddle with bugs and be inefficient,
+because there are tons of really amazing programmers who work on things like
+&lt;a class=&quot;post-link&quot; href=&quot;https://www.qt.io/&quot;&gt;Qt&lt;/a&gt;,
+&lt;a class=&quot;post-link&quot; href=&quot;http://getbootstrap.com/&quot;&gt;Bootstrap&lt;/a&gt;,
+and &lt;a class=&quot;post-link&quot; href=&quot;https://angularjs.org/&quot;&gt;Angular&lt;/a&gt;.
+No single programmer can hope to be as good as the massive teams that make and maintain
+these frameworks, and we're lucky that they made them for us to use.&lt;/p&gt;
+
+&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;Please practice proper framework safety.&lt;/p&gt;</content><author><name>Erik Hallmark</name></author><summary type="html">I would assume most people reading this blog know what
+a framework is, but in case you don't let me explain. A framework is pretty much
+what it sounds like, it gives developers scaffolding for making applications.
+For my examples I will be using the the Qt Framework,
+Qt is a framework for creating cross-platoform GUI applications it offers utilies for things
+such as managing windows, reading &amp;amp; writing files, accesssing the internet, drawing GUIs,
+and much much more. I use Qt whenever I want to quickly create an application, because it make the more
+repetitive parts of programming much faster and easier. But if need be I could create
+applications with the same functionality without the framework, and in my opinion
+that's a very important thing to be able to do.</summary></entry><entry><title type="html">Making a blog with Jekyll</title><link href="http://localhost:4000/2016/10/18/making-a-blog-with-jekyll.html" rel="alternate" type="text/html" title="Making a blog with Jekyll" /><published>2016-10-18T11:20:00-07:00</published><updated>2016-10-18T11:20:00-07:00</updated><id>http://localhost:4000/2016/10/18/making-a-blog-with-jekyll</id><content type="html" xml:base="http://localhost:4000/2016/10/18/making-a-blog-with-jekyll.html">&lt;p class=&quot;post-paragraph&quot;&gt;A few weeks ago I started playing arround with the idea
 of starting a blog, I could have gone the simple route and used a service like
 &lt;a href=&quot;https://www.blogger.com/home&quot; class=&quot;post-link&quot;&gt;Blogger&lt;/a&gt; or
 &lt;a href=&quot;https://www.tumblr.com/&quot; class=&quot;post-link&quot;&gt;Tumblr&lt;/a&gt;.
@@ -35,8 +144,8 @@ which I use for the prefixing on this site. &lt;/p&gt;
   That's it. After that you have a server running at the adress specified in the
   terminal output(Normally 127.0.0.1:4000). This server will automaticly rebuild
   the site if you change a file. When you want to build the site for deployment
-  I'd suggest you use &lt;span class=&quot;snippet&quot;&gt;jekyll build&lt;/span&gt;, it builds the URLS
-  base off of your &lt;span class=&quot;snippet&quot;&gt;_config.yml&lt;/span&gt; file, instead of localhost.
+  I'd suggest you use &lt;span class=&quot;snippet&quot;&gt;jekyll build&lt;/span&gt;, it builds the URLs
+  based off of your &lt;span class=&quot;snippet&quot;&gt;_config.yml&lt;/span&gt; file, instead of localhost.
 &lt;/p&gt;
 
 &lt;p class=&quot;post-paragraph&quot;&gt;Once you have the basic site setup, it's pretty simple to
