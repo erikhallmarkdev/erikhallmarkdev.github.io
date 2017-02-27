@@ -5,6 +5,14 @@
 
     {% include header.html %}
 
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-2541356049256563",
+        enable_page_level_ads: true
+      });
+    </script>
+    
     <div id="main" itemtype="http://schema.org/Article">
       <h2 class="post-title" itemprop="name">{{ page.title }}</h2>
       <span class="post-data"> <span itemprop="dateCreated">{{ page.date | date: "%b %-d, %Y - %H:%M" }}</span> {% if page.author %} -- <span itemprop="author">{{ page.author }}</span> {% endif %}</span>
