@@ -22,7 +22,6 @@ body{
 }
 
 #title {
-/*  margin-left: 15px;*/
   line-height: 1.5;
   color: black;
   text-decoration: none;
@@ -64,7 +63,6 @@ body{
   color: black;
   text-decoration: none;
   transition: all 150ms ease-in-out;
-
 }
 
 .navItem-desktop:hover{
@@ -164,16 +162,27 @@ body{
   margin: 5px;
   margin-bottom: 20px;
   max-width: 650px;
+  color: #3b3b3b;
+  transition: 150ms;
 }
 
 .post-display-title{
+  display: block;
   color: black;
+  color: #3b3b3b;
   text-decoration: none;
   margin-bottom: 4px;
+  transition: all 150ms;
 }
 
-.post-display-title:hover{
-  text-decoration: underline;
+.post-display:hover{
+  color: black;
+}
+
+.post-display:hover > a > 
+.post-display-title{
+  color: black;
+  margin-left: 10px;
 }
 
 .post-display-title-link{
@@ -182,6 +191,7 @@ body{
 }
 
 .post-display-data{
+  display: block;
   font-size: 12px;
   font-style: italic;
 }
