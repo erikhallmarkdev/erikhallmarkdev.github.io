@@ -13,6 +13,7 @@ body{
   top: 0;
   left: 0;
   z-index: 50000;
+  
 }
 
 #header-contianer {
@@ -206,28 +207,56 @@ body{
   flex-wrap: wrap;
   max-width: 600px;
   margin: auto;
+  margin-top: 25px;
 }
 
-.id-card{
-  background: #e8e8e8;
-  width: 100%;
-  max-width: 250px;
-  margin: 10px auto;
-  text-align: center;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 5px;
-  border: 3px solid #dedede;
+.id-card {
+  width: 275px;
+  height: 150px;
+  margin: 10px;
+  background: white;
+  box-shadow: 0px 5px 10px -2px rgba(1, 1, 1, 0.8);
+  transition: all 250ms;
+  border: 2px solid #dedede;
+}
+
+.id-card:hover{
+  box-shadow: 0px 10px 25px -10px rgba(1, 1, 1, 0.5);
+  transform: scale(1.05);
 }
 
 .id-card-title{
-  padding: 15px;
+  display: block;
+  text-align: center;
+  padding: 35px 15px;
+  box-sizing: border-box;
+  font-size: 25px;
+  width: 275px;
+}
+
+.id-card-title::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  background: black;
+  margin-left: 137px;
+  transition: all 150ms;
+  left 0px;
+}
+
+.id-card:hover > .id-card-title::after{
+  width: 200px;
+  margin-left: 22.5px;
 }
 
 .id-card-link{
   color: #1a66f7;
   text-decoration: none;
+  text-align: center;
+  display: block;
+  
 }
 
 .id-card-link:hover{
@@ -411,3 +440,4 @@ body{
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
 
 /*Syntax hightlighting end */
+
