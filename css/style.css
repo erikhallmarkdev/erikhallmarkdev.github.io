@@ -208,6 +208,7 @@ body{
   max-width: 600px;
   margin: auto;
   margin-top: 25px;
+  justify-content: center;
 }
 
 .id-card {
