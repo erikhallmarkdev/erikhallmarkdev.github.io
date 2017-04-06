@@ -1,5 +1,52 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-05T20:13:47-07:00</updated><id>http://localhost:4000//</id><title type="html">Erik Hallmark</title><subtitle>This is where I talk about me and the weird stuff I do. It's worth a look.
-</subtitle><entry><title type="html">Inroducing Envy</title><link href="http://localhost:4000/2017/02/22/Envy.html" rel="alternate" type="text/html" title="Inroducing Envy" /><published>2017-02-22T14:28:00-08:00</published><updated>2017-02-22T14:28:00-08:00</updated><id>http://localhost:4000/2017/02/22/Envy</id><content type="html" xml:base="http://localhost:4000/2017/02/22/Envy.html">&lt;p class=&quot;post-paragraph&quot;&gt;Envy is a simple node/value configuration language I started developing about a week ago for
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-06T00:52:03-07:00</updated><id>http://localhost:4000//</id><title type="html">Erik Hallmark</title><subtitle>This is where I talk about me and the weird stuff I do. It's worth a look.
+</subtitle><entry><title type="html">Why do people still use C++?</title><link href="http://localhost:4000/2017/04/06/why-do-people-use-cplusplus.html" rel="alternate" type="text/html" title="Why do people still use C++?" /><published>2017-04-06T00:50:00-07:00</published><updated>2017-04-06T00:50:00-07:00</updated><id>http://localhost:4000/2017/04/06/why-do-people-use-cplusplus</id><content type="html" xml:base="http://localhost:4000/2017/04/06/why-do-people-use-cplusplus.html">&lt;p class=&quot;post-paragraph&quot;&gt;I love C++, like really love it. When I tell people that, they tend
+to ask me one question &lt;i&gt;&quot;Why?&quot;&lt;/i&gt;, and you know what, that's a fair question, C++ has a very
+steep learning curve, and it can be a real pain in the ass.&lt;/p&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;Most of them time when people ask why I use C++, they're pretty new to 
+programming, and have primarily learned languages like C# or Java, which are, by comparirison, quite simple.
+So it makes sense that they might wonder what gives experienced programmers such a hard-on for C++. The short
+answer to that question is very simple, control, speed, and power. C++ offers all of these things, and it offers
+them in surplus, if you want to have direct control over exactly how much memory your program is using, then 
+C++ is the language for you.&lt;/p&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;To go a bit more in-depth, C++ gives the programmer very precise control over how
+system resources are being used, this is the exact reason why it's so much more difficult to learn than
+langauges like C# or Java, it hands you all the control, and the compiler just translates what you write into machine code.&lt;/p&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;This more advanced control is both a blessing, and a curse. While it does mean that
+your code can be far faster, it also means there's a lot more room for mistakes, and the mistakes you do make
+can have far more disastrous consequences. You can still make mistakes in higher-level langauges, but they 
+tend to be less frequent, and less damaging. This is the exact reason that I prefer to see people learn how
+to program on lower-level languages like C or C++, when they learn on a language that takes more of that 
+control away from them, they don't learn the merits of proper control over resources, and they tend to 
+write pretty lazy code. I started learning how to program with Java, and it tooks me ages to unlearn 
+some of the bad habits I got from starting with such a high-level language.&lt;/p&gt;
+
+&lt;h4&gt;What's the real difference between C++ and higher-level languages?&lt;/h4&gt;
+&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;The phrase  &lt;i&gt;&quot;close to the metal&quot;&lt;/i&gt; gets thrown around a lot in programming,
+and it seems to confuse a lot of new programmers, I'll do my best to explain what it means. The prase close to the metal
+isn't quite right, a more accurate phrase might be &lt;i&gt;&quot;Fewer layers of abstraction between the programmer and the final machine code.&quot;&lt;/i&gt;
+, but I suppose that lacks eloquence. All it really means is how close is the code you're writing to machine code. With 
+a language like C++, your code is basically translated directly to machine code, the compiler doesn't make many
+decisions about how your code should be ran, it just compiles what you write down to something that the processer
+can understand. On the other hand, let's look at how C# works, C# is compiled down to something called bytecode, 
+you can think of bytecode as a form of pseudo-machine-code, it's designed to run with similar efficency, but it tends 
+to be just a bit more complex. Because this bytecode isn't machine code, it cannot run directly on the processor, 
+instead it needs a runtime, a runtime is a virtual-machine, designed to run a single program at a time. The advantage
+to using a runtime is that you can make a runtime for multiple system architectures, and the bytecode will work on any system
+that has that runtime installed. The obvious disadvantage of the this, is that it will require for more overhead, after all
+you have a whole 'nother program running, just to run the one that you wrote.&lt;/p&gt;
+
+&lt;p class=&quot;post-paragraph&quot;&gt;To wrap up let me just say this one thing, while C++ may not be the &lt;i&gt;&quot;hot&quot;&lt;/i&gt; language at the
+moment, it is still one of the most used languages, and it's what most other languages are written in. So regardless of whether
+you plan to use C++ for most of your programming needs, or if you plan to make all of your applications in NodeJS/Electron,
+I'd suggest you understand how the C++&lt;i&gt;(And C for that matter)&lt;/i&gt; language works, because it's a really good idea to understand how 
+the basis of whatever your programming in works, and C++ is the basis for most systems.&lt;/p&gt;</content><author><name>Erik Hallmark</name></author><summary type="html">I love C++, like really love it. When I tell people that, they tend
+to ask me one question &quot;Why?&quot;, and you know what, that's a fair question, C++ has a very
+steep learning curve, and it can be a real pain in the ass.</summary></entry><entry><title type="html">Inroducing Envy</title><link href="http://localhost:4000/2017/02/22/Envy.html" rel="alternate" type="text/html" title="Inroducing Envy" /><published>2017-02-22T14:28:00-08:00</published><updated>2017-02-22T14:28:00-08:00</updated><id>http://localhost:4000/2017/02/22/Envy</id><content type="html" xml:base="http://localhost:4000/2017/02/22/Envy.html">&lt;p class=&quot;post-paragraph&quot;&gt;Envy is a simple node/value configuration language I started developing about a week ago for
 a project that I'm working on. It's a simple text-based language that offers a relatively simple simple syntax for
 creationg configuration documents. It can store booleans, numbers, and strings, and stores them in a hierarchical 
 data structure that is very simple to understand. &lt;a class=&quot;post-link&quot; href=&quot;/stuff/envy&quot;&gt;Offical page&lt;/a&gt; &lt;/p&gt;

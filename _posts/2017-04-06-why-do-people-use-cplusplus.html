@@ -1,0 +1,53 @@
+---
+layout: post
+author: Erik Hallmark
+title: Why do people still use C++?
+date: 2017-04-06 00:50
+---
+
+<p class="post-paragraph">I love C++, like really love it. When I tell people that, they tend
+to ask me one question <i>"Why?"</i>, and you know what, that's a fair question, C++ has a very
+steep learning curve, and it can be a real pain in the ass.</p>
+
+<p class="post-paragraph">Most of them time when people ask why I use C++, they're pretty new to 
+programming, and have primarily learned languages like C# or Java, which are, by comparirison, quite simple.
+So it makes sense that they might wonder what gives experienced programmers such a hard-on for C++. The short
+answer to that question is very simple, control, speed, and power. C++ offers all of these things, and it offers
+them in surplus, if you want to have direct control over exactly how much memory your program is using, then 
+C++ is the language for you.</p>
+
+<p class="post-paragraph">To go a bit more in-depth, C++ gives the programmer very precise control over how
+system resources are being used, this is the exact reason why it's so much more difficult to learn than
+langauges like C# or Java, it hands you all the control, and the compiler just translates what you write into machine code.</p>
+
+<p class="post-paragraph">This more advanced control is both a blessing, and a curse. While it does mean that
+your code can be far faster, it also means there's a lot more room for mistakes, and the mistakes you do make
+can have far more disastrous consequences. You can still make mistakes in higher-level langauges, but they 
+tend to be less frequent, and less damaging. This is the exact reason that I prefer to see people learn how
+to program on lower-level languages like C or C++, when they learn on a language that takes more of that 
+control away from them, they don't learn the merits of proper control over resources, and they tend to 
+write pretty lazy code. I started learning how to program with Java, and it tooks me ages to unlearn 
+some of the bad habits I got from starting with such a high-level language.</p>
+
+<h4>What's the real difference between C++ and higher-level languages?</h4>
+<span class="line"></span>
+
+<p class="post-paragraph">The phrase  <i>"close to the metal"</i> gets thrown around a lot in programming,
+and it seems to confuse a lot of new programmers, I'll do my best to explain what it means. The prase close to the metal
+isn't quite right, a more accurate phrase might be <i>"Fewer layers of abstraction between the programmer and the final machine code."</i>
+, but I suppose that lacks eloquence. All it really means is how close is the code you're writing to machine code. With 
+a language like C++, your code is basically translated directly to machine code, the compiler doesn't make many
+decisions about how your code should be ran, it just compiles what you write down to something that the processer
+can understand. On the other hand, let's look at how C# works, C# is compiled down to something called bytecode, 
+you can think of bytecode as a form of pseudo-machine-code, it's designed to run with similar efficency, but it tends 
+to be just a bit more complex. Because this bytecode isn't machine code, it cannot run directly on the processor, 
+instead it needs a runtime, a runtime is a virtual-machine, designed to run a single program at a time. The advantage
+to using a runtime is that you can make a runtime for multiple system architectures, and the bytecode will work on any system
+that has that runtime installed. The obvious disadvantage of the this, is that it will require for more overhead, after all
+you have a whole 'nother program running, just to run the one that you wrote.</p>
+
+<p class="post-paragraph">To wrap up let me just say this one thing, while C++ may not be the <i>"hot"</i> language at the
+moment, it is still one of the most used languages, and it's what most other languages are written in. So regardless of whether
+you plan to use C++ for most of your programming needs, or if you plan to make all of your applications in NodeJS/Electron,
+I'd suggest you understand how the C++<i>(And C for that matter)</i> language works, because it's a really good idea to understand how 
+the basis of whatever your programming in works, and C++ is the basis for most systems.</p>
