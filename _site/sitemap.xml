@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/2017/02/18/Envy.html</loc>
-<lastmod>2017-02-18T10:00:00-08:00</lastmod>
+<loc>http://localhost:4000/2017/04/05/why-do-people-use-cplusplus.html</loc>
+<lastmod>2017-04-05T20:11:45-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/2017/03/17/mistakes-all-programmers-make.html</loc>
+<lastmod>2017-03-17T12:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/2017/02/22/Envy.html</loc>
+<lastmod>2017-02-22T14:28:00-08:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/2016/11/26/Frameworks-Are-Awesome.html</loc>

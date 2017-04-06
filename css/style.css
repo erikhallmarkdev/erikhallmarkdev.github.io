@@ -75,6 +75,7 @@ body{
   /* I'm not super happy with this shadow, 
   but it's the best I can come up with */
   box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.25);
+  z-index: 99999;
 }
 
 #nav-mobile.active {
@@ -266,7 +267,6 @@ body{
   background: black;
   margin-left: 122px;
   transition: all 150ms;
-  left 0px;
 }
 
 .id-card:hover > .id-card-title::after{
