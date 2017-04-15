@@ -8,7 +8,7 @@
     <a href="{{ post.url  }}" class="post-display-link">
       <h2 class="post-display-title" itemprop="name">{{ post.title }}</h2>
       <span class="post-display-data" itemprop="dateCreated"> {{ post.date | date: "%b %-d, %Y" }} </span>
-      <p meta="description" class="post-display-excerpt" itemprop=""> {{ post.excerpt | truncatewords: 35 | strip_html }} </p>
+      <p meta="description" class="post-display-excerpt" itemprop=""> {{ post.excerpt | truncatewords: 75 | strip_html }} </p>
       <p href=" {{ post.url }} " class="post-display-bottom-link">Check it out</p>
       <span class="line"></span>  
     </a>
