@@ -6,5 +6,12 @@
 
 <h1>404</h1>
 <span class="line"></span>
-<h4>Page not found</h4>
+<h4>Page <span id="url"></span> not found</h4>
 <a href="erikhallmark.com" class="post-link">Back to safety</a>
+
+
+<script>
+  $(document).ready(function(){
+    $(".url").text(window.location.href);
+  });
+</script>
