@@ -6,10 +6,12 @@
 
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {% feed_meta %}
-  {% seo %}
 
   <meta name="description" content="{% if page.description %} {{ page.description }} {% else %} {{ site.description }} {% endif %}"/>
 
   <meta name="google-site-verification" content="MIoPUhzL4CPAZWGyLd9w_9KP0_fhamqFA2r2LKStJdY" />
+  
+  {% feed_meta %}
+  {% seo %}
+
 </head>
