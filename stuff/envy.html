@@ -7,11 +7,11 @@
 <h1>Envy</h1>
 <span class="line"></span>
 
-<p>Envy is a simple Node/Value configuration language designed to make writing and 
-reading configuration documents as fast and simple as posible. Envy offers a simple 
+<p>Envy is a simple Node/Value configuration language designed to make writing and
+reading configuration documents as fast and simple as posible. Envy offers a simple
 yet power syntax that is incredibly quick to learn.</p>
 
-<p>At the time of writing this there is only a 
+<p>At the time of writing this there is only a
 <a href="https://github.com/erikhallmarkdev/envy.net" class="post-link" target="_blank"> .NET build of Envy,</a>
 but many more languages are in the works, including JavaScript, C++, and Python.</p>
 
@@ -20,8 +20,8 @@ but many more languages are in the works, including JavaScript, C++, and Python.
 
 <p>Envy is a lightweight, text based, language independent configuration language.</p>
 
-<p>Envy can hold three basic types of data <span class="snippet">Bools,</span> 
-<span class="snippet">Numbers,</span> and <span class="snippet">Strings.</span> 
+<p>Envy can hold three basic types of data <span class="snippet">Bools,</span>
+<span class="snippet">Numbers,</span> and <span class="snippet">Strings.</span>
 This data is stored in a hierarchy of <span class="snippet">Items,</span>
 <span class="snippet">Values,</span> and <span class="snippet">Nodes.</span></p>
 
@@ -29,8 +29,8 @@ This data is stored in a hierarchy of <span class="snippet">Items,</span>
 
 <p>Values essentially arrays of items, they can store as many items as needed</p>
 
-<p>Nodes are a group of values and other nodes. A node identifies the nodes and 
-values that it holds with names, a name can be composed of letters, numbers, and 
+<p>Nodes are a group of values and other nodes. A node identifies the nodes and
+values that it holds with names, a name can be composed of letters, numbers, and
 underscores but the first character must be a letter. Each value in a node has a
 unique name, but a multiple nodes can all share the same name.</p>
 
@@ -38,7 +38,7 @@ unique name, but a multiple nodes can all share the same name.</p>
 <span class="line"></span>
 
 <p>An item can be be one of three things
-  
+
   <ul>
     <li>A bool can be written as a simple "true" or "false" in Envy.</li>
     <li>A number can be any number, negative or possitive, with as many numbers after the decimal place as needed</li>
@@ -56,15 +56,15 @@ value ( "Hello, world!" )
 OtherValue ( "Strings, bools, numbers, oh my!", true, false, 3.1415 )
 
 Node {
-  value ( "Value within node" ) 
+  value ( "Value within node" )
   #Comment
-  
+
   NestedNode {
-        
+
   }
 
   NestedNode { #Note that these two nodes share the same name, nodes can do that, values cannot.
-  
+
   }
 }
 
@@ -73,25 +73,4 @@ Node {
 <p>If you have any questions please feel free to leave them in the comment section below, or email me at <a href="emailto:erikhallmarkdev@gmail.com">erikhallmarkdev@gmail.com</a></p>
 
 
-<div id="comment-box">
-  <div id="disqus_thread"></div>
-  <script>
-  
-  /**
-  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-  
-  var disqus_config = function () {
-    this.page.url = "{{ site.url }}{{ page.url}}";  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = "{{page.url}}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-  };
-  
-  (function() { // DON'T EDIT BELOW THIS LINE
-  var d = document, s = d.createElement('script');
-  s.src = '//erikhallmark.disqus.com/embed.js';
-  s.setAttribute('data-timestamp', +new Date());
-  (d.head || d.body).appendChild(s);
-  })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></a></noscript></script></div>
-</div>
+{% include comments.html%}

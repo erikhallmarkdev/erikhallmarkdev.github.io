@@ -1,6 +1,6 @@
 <html>
     <head>
-  <title> Contact --  Erik Hallmark</title>
+  <title> 404 - Page not found --  Erik Hallmark</title>
   <link rel="stylesheet" type="text/css" href="/css/style.css"/>
   <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Taviraj" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
@@ -9,19 +9,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Erik Hallmark" />
   <!-- Begin Jekyll SEO tag v2.1.0 -->
-<title>Contact - Erik Hallmark</title>
-<meta property="og:title" content="Contact" />
+<title>404 - Page not found - Erik Hallmark</title>
+<meta property="og:title" content="404 - Page not found" />
 <meta name="description" content="This is where I talk about me and the weird stuff I do. It’s worth a look." />
 <meta property="og:description" content="This is where I talk about me and the weird stuff I do. It’s worth a look." />
-<link rel="canonical" href="http://localhost:4000/contact.html" />
-<meta property="og:url" content="http://localhost:4000/contact.html" />
+<link rel="canonical" href="http://localhost:4000/404.html" />
+<meta property="og:url" content="http://localhost:4000/404.html" />
 <meta property="og:site_name" content="Erik Hallmark" />
 <script type="application/ld+json">
 {"@context": "http://schema.org",
 "@type": "WebPage",
-"headline": "Contact",
+"headline": "404 - Page not found",
 "description": "This is where I talk about me and the weird stuff I do. It’s worth a look.",
-"url": "http://localhost:4000/contact.html"}</script>
+"url": "http://localhost:4000/404.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -63,29 +63,17 @@
 
     <div id="main">
 
-      <div id="contact-display-area">
+      <h1>404</h1>
+<span class="line"></span>
+<h4>Page <i id="url"></i> not found</h4>
+<a href="http://erikhallmark.com" class="post-link">Back to safety</a>
 
-  <a class="id-card" href="https://github.com/erikhallmarkdev/">
-    <span class="id-card-title">Github</span>
-    <div class="id-card-link">erikhallmarkdev</div>
-  </a>
 
-  <a class="id-card" href="http://codepen.io/ErikHallmark/">
-    <span class="id-card-title">Code Pen</span>
-    <div class="id-card-link">Erik Hallmark</div>
-  </a>
-
-  <a class="id-card"  href="mailto:erik@erikhallmark.com">
-    <span class="id-card-title">Email</span>
-    <div class="id-card-link">Erik@erikhallmark.com</div>
-  </a>
-
-  <a class="id-card" href="https://twitter.com/erikhallmarkdev">
-    <span class="id-card-title">Twitter</span>
-    <div class="id-card-link">@ErikHallmarkDev</div>
-  </a>
-
-</div>
+<script>
+  $(document).ready(function(){
+    $("#url").text(window.location.pathname);
+  });
+</script>
 
 
 
