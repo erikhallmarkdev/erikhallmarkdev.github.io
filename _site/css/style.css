@@ -13,11 +13,11 @@ body{
   top: 0;
   left: 0;
   z-index: 50000;
-  
+
 }
 
 #header-contianer {
-  max-width: 980px;  
+  max-width: 980px;
   margin: auto;
 }
 
@@ -49,7 +49,7 @@ body{
   width: 195px;
 }
 
-#nav-desktop {
+#nav {
   float: right;
   height: 45px;
   display: -webkit-box;
@@ -59,7 +59,7 @@ body{
 
 }
 
-.navItem-desktop {
+.navItem {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -72,39 +72,9 @@ body{
   transition: all 150ms ease-in-out;
 }
 
-.navItem-desktop:hover{
+.navItem:hover{
   width: 120px;
   background: #e1e1e1;
-}
-
-#nav-mobile{
-  display: none;
-  /* I'm not super happy with this shadow, 
-  but it's the best I can come up with */
-  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.25);
-  z-index: 99999;
-}
-
-#nav-mobile.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position:  absolute;
-  width: 100%;
-  left: 0;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.navItem-mobile {
-  padding: 15px;
-  text-align: center;
-  background: #f5f5f5;
-  color: black;
-  text-decoration: none;
-  border-bottom: 1px solid #ebebeb;
 }
 
 #nav-mobile-button {
@@ -153,11 +123,11 @@ body{
   margin: auto;
   margin: 25px auto;
   max-width: 980px;
-  
-  /*This line basically just makes the footer sticky, 
+
+  /*This line basically just makes the footer sticky,
   it's not a great fix, but it works, so fuck it.*/
   min-height: calc(100% - 227px);
-  
+
 }
 
 #footer{
@@ -206,7 +176,7 @@ body{
   color: black;
 }
 
-.post-display:hover > a > 
+.post-display:hover > a >
 .post-display-title{
   color: black;
   margin-left: 10px;
@@ -316,7 +286,7 @@ body{
   text-decoration: none;
   text-align: center;
   display: block;
-  
+
 }
 
 .id-card-link:hover{
@@ -326,24 +296,65 @@ body{
 
 @media only screen and (max-width:800px) {
 
-	#nav-desktop {
-		display: none;
+	#nav {
+    /* I'm not super happy with this shadow,
+    but it's the best I can come up with */
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.25);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position:  absolute;
+    z-index: 99999;
+    display: none;
+    height: auto;
+    float: none;
+    width: 100%;
+    left: 0;
 	}
 
-    #title{
-      font-size: 20px;
-      line-height: 2.3;
-    }
+  #nav.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 
-    #title::after{
-      margin-top: -14px;
-      margin-left: 65px;
-    }
+  }
 
-    #title:hover:after{
-      width: 130px;
-    }
-  
+  .navItem {
+    padding: 15px;
+    text-align: center;
+    background: #f5f5f5;
+    color: black;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  .navItem:hover {
+    -webkit-transform: none;
+            transform: none;
+    width: 100%;
+  }
+
+  #title{
+    font-size: 20px;
+    line-height: 2.3;
+  }
+
+  .rss-button {
+    display: none;
+  }
+
+  #title::after{
+    margin-top: -14px;
+    margin-left: 65px;
+  }
+
+  #title:hover:after{
+    width: 130px;
+  }
+
 	#nav-mobile-button {
 		display: block;
 	}
@@ -354,12 +365,6 @@ body{
   #main, #header-contianer {
     margin-left: 5%;
     margin-right: 5%;
-  }
-}
-
-@media only screen and (min-width:801px){
-  #nav-mobile.active{
-    display: none;
   }
 }
 
@@ -398,7 +403,7 @@ body{
 .post-link{
   color: #1a66f7;
   text-decoration: none;
-  
+
 }
 
 .post-link:hover{
