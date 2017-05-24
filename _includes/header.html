@@ -4,21 +4,16 @@
     <a href="/" id="title">{{ site.title }}</a>
 
     <nav id="nav">
-      <a class="navItem" href="/">Home</a>
-      <a class="navItem" href="/creations">Creations</a>
-      <a class="navItem" href="/contact">Contact</a>
+
+      {% for nav in site.data.navigation %}
+
+        <a href="{{ nav.url }}" class="navItem">{{ nav.name }}</a>
+
+      {% endfor %}
       {% include rss-button.html %}
     </nav>
 
     <div href="" id="nav-mobile-button" tabindex="1">Navigation</div>
-    <!--
-    <nav id="nav-mobile">
-      <a class="navItem-mobile" href="/">Home</a>
-      <a class="navItem-mobile" href="/creations">Creations</a>
-      <a class="navItem-mobile" href="/contact">Contact</a>
-
-    </nav>-->
-
   </div>
 
 </header>

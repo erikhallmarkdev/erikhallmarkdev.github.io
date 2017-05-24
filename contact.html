@@ -6,24 +6,13 @@
 
 <div id="contact-display-area">
 
-  <a class="id-card" href="https://github.com/erikhallmarkdev/">
-    <span class="id-card-title">Github</span>
-    <div class="id-card-link">erikhallmarkdev</div>
-  </a>
+  {% for contact in site.data.contact %}
 
-  <a class="id-card" href="http://codepen.io/ErikHallmark/">
-    <span class="id-card-title">Code Pen</span>
-    <div class="id-card-link">Erik Hallmark</div>
-  </a>
+    <a href="{{ contact.url }}" class="id-card">
+      <span class="id-card-title">{{ contact.sitename }}</span>
+      <div class="id-card-link">{{ contact.username }}</div>
+    </a>
 
-  <a class="id-card"  href="mailto:erik@erikhallmark.com">
-    <span class="id-card-title">Email</span>
-    <div class="id-card-link">Erik@erikhallmark.com</div>
-  </a>
-
-  <a class="id-card" href="https://twitter.com/erikhallmarkdev">
-    <span class="id-card-title">Twitter</span>
-    <div class="id-card-link">@ErikHallmarkDev</div>
-  </a>
+  {% endfor %}
 
 </div>

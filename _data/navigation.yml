@@ -1,0 +1,8 @@
+- name: Home
+  url: /
+
+- name: Creations
+  url: /creations
+
+- name: Contact
+  url: /contact
