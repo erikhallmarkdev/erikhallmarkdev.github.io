@@ -344,10 +344,44 @@ body{
   font-style: italic;
 }
 
+.post-image-background {
+  padding: 15px;
+  background: #e8e8e8;
+  border-radius: 5px;
+}
+
+.post-image-background.expand {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;;
+  align-items: center;
+}
+
 .post-image{
   margin: auto;
   max-width: 100%;
+  cursor: -webkit-zoom-in;
+}
 
+.post-image-background.expand > .post-image {
+  max-width: 75%;
+  max-height: 75%;
+  cursor: -webkit-zoom-out;
+  margin: 0;
+}
+
+.post-image-alt {
+  margin: 10px;
+  display: block;
+  font-size: 12px;
+  font-style: italic;
 }
 
 .post-paragraph{

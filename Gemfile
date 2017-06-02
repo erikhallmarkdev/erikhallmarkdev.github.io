@@ -23,7 +23,6 @@ group :jekyll_plugins do
    gem "jekyll-feed"
    gem "rouge", "~> 1.7"
    gem "jekyll-paginate", "1.1.0"
-   gem "octopress-autoprefixer"
    gem "jekyll-sitemap"
    gem "jekyll-seo-tag"
 end
