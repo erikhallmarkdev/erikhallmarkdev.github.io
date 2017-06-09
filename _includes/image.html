@@ -1,4 +1,4 @@
-<div class="post-image-background">
-  <img src="{{ include.url }}" alt="{{ include.alt }}" class="post-image">
+<div class="post-image-background" v-on:click="expanded = !expanded" v-bind:class="{ expand: expanded }">
+  <img src="{{ include.url }}" alt="{{ include.alt }}" class="post-image" >
   <span class="post-image-alt">{{ include.alt }}</span>
 </div>

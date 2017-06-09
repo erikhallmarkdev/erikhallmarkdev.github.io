@@ -1,9 +1,9 @@
 <header id="header">
 
-  <div id="header-contianer">
+  <div id="header-container">
     <a href="/" id="title">{{ site.title }}</a>
 
-    <nav id="nav">
+    <nav id="nav" v-bind:class="{ active: open }">
 
       {% for nav in site.data.navigation %}
 
@@ -13,7 +13,7 @@
       {% include rss-button.html %}
     </nav>
 
-    <div href="" id="nav-mobile-button" tabindex="1">Navigation</div>
+    <div id="nav-mobile-button" v-on:click="open = !open" v-bind:class="{ active : open }">Navigation</div>
   </div>
 
 </header>
