@@ -1,424 +1,52 @@
-body{
-  margin: 0;
-  font-family: arial, sans-serif;
-  background: white;
-  background: #fff;
+body {
+    margin: 0;
+    font-family: monospace;
+    color: #252525;
+    background-color: #efefef;
 }
 
-#header {
-  width: 100%;
-  height: 45px;
-  border-bottom: 2px solid #e2e2e2;
-  background: #f5f5f5;
-  top: 0;
-  left: 0;
-  z-index: 50000;
-
-}
-
-#header-container {
-  max-width: 980px;
-  margin: auto;
+#main {
+    max-width: 980px;
+    margin: auto;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 #title {
-  line-height: 1.5;
-  color: black;
-  text-decoration: none;
-  font-size: 30px;
-  font-family: 'Inconsolata', monospace;
-  transition: all 150ms;
-}
-
-#title::after{
-  display: block;
-  position: absolute;
-  width: 0px;
-  margin-left: 97.5px;
-  height: 2px;
-  margin-top: -8px;
-  background: black;
-  transition: all 250ms;
-  content: "";
-}
-
-#title:hover:after{
-  margin-left: 0px;
-  width: 195px;
-}
-
-#nav {
-  float: right;
-  height: 45px;
-  display: flex;
-  width: auto;
-
-}
-
-.navItem {
-  flex-grow: 1;
-  width: 100px;
-  text-align: center;
-  line-height: 2.9;
-  color: black;
-  text-decoration: none;
-  transition: all 150ms ease-in-out;
-}
-
-.navItem:hover{
-  width: 120px;
-  background: #e1e1e1;
-}
-
-#nav-mobile-button {
-  display: none;
-  font-size: 18px;
-  float: right;
-  height: 45px;
-  line-height: 2.5;
-  padding-right: 15px;
-  padding-left: 25px;
-  cursor: pointer;
-  color: black;
-  text-decoration: none;
-  outline: none;
-  user-select: none;
-}
-
-#nav-mobile-button:after {
-  content: "";
-  display: inline-block;
-  height: 0px;
-  width: 0px;
-  border-right: 7px solid black;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  margin-left: -100px;
-  transition: transform 150ms;
-}
-
-#nav-mobile-button.active:after{
-  transform: rotateZ(-90deg);
-}
-
-#nav-mobile-button.active{
-  background: #e1e1e1;
-}
-
-#main{
-  margin: auto;
-  margin: 25px auto;
-  max-width: 980px;
-
-  /*This line basically just makes the footer sticky,
-  it's not a great fix, but it works, so fuck it.*/
-  min-height: calc(100% - 227px);
-
-}
-
-#footer{
-  max-width: 980px;
-  height: 125px;
-  margin: auto;
-  margin-top: 5px;
-  text-align: center;
-}
-
-.footer-link{
-  color: #1a66f7;
-  text-decoration: none;
-}
-
-.footer-link:hover{
-  text-decoration: underline;
-  color: #1442d9;
-}
-
-.post-display{
-  margin: 5px;
-  margin-bottom: 20px;
-  max-width: 650px;
-  color: #3b3b3b;
-  transition: 150ms;
-}
-
-.post-display-link{
-  color: black;
-  text-decoration: none;
-}
-
-.post-display-title{
-  display: block;
-  color: black;
-  color: #3b3b3b;
-  text-decoration: none;
-  margin-bottom: 4px;
-  transition: all 150ms;
-}
-
-.post-display:hover{
-  color: black;
-}
-
-.post-display:hover > a >
-.post-display-title{
-  color: black;
-  margin-left: 10px;
-}
-
-.post-display-title-link{
-  color: black;
-  text-decoration: none;
-}
-
-.post-display-data{
-  display: block;
-  font-size: 12px;
-  font-style: italic;
-}
-
-.post-display-excerpt{
-  padding: 10px;
-}
-
-.post-display-bottom-link{
-  display: block;
-  padding: 5px;
-  color: #1a66f7;
-  text-decoration: none;
-}
-
-.post-display-bottom-link:hover{
-  text-decoration: underline;
-  color: #1442d9;
-}
-
-.line{
-  width: 100%;
-  border-bottom: 1px solid rgba(50, 50, 50, 0.25);
-  margin: 5px;
-  display: block;
-}
-
-#contact-display-area{
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: 600px;
-  margin: auto;
-  margin-top: 25px;
-}
-
-.id-card {
-  width: 275px;
-  height: 150px;
-  margin: 10px;
-  background: white;
-  box-shadow: 0px 5px 10px -2px rgba(1, 1, 1, 0.8);
-  transition: all 250ms;
-  border: 2px solid #dedede;
-  opacity: 0.75;
-  text-decoration: none;
-}
-
-.id-card:hover{
-  box-shadow: 0px 10px 25px -10px rgba(1, 1, 1, 0.5);
-  transform: scale(1.05);
-  opacity: 1;
-}
-
-.id-card-title{
-  color: black;
-  display: block;
-  text-align: center;
-  padding: 35px 15px;
-  box-sizing: border-box;
-  font-size: 25px;
-  width: 275px;
-}
-
-.id-card-title::after{
-  content: "";
-  display: block;
-  position: absolute;
-  width: 0px;
-  height: 2px;
-  background: black;
-  margin-left: 122px;
-  transition: all 150ms;
-}
-
-.id-card:hover > .id-card-title::after{
-  width: 200px;
-  margin-left: 22.5px;
-}
-
-.id-card-link{
-  color: #1a66f7;
-  text-decoration: none;
-  text-align: center;
-  display: block;
-
-}
-
-.id-card-link:hover{
-  text-decoration: underline;
-  color: #1442d9;
-}
-
-@media only screen and (max-width:800px) {
-
-	#nav {
-    /* I'm not super happy with this shadow,
-    but it's the best I can come up with */
-    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.25);
-    flex-direction: column;
-    position:  absolute;
-    z-index: 99999;
-    display: none;
-    height: auto;
-    float: none;
-    width: 100%;
-    left: 0;
-	}
-
-  #nav.active {
-    display: flex;
-
-  }
-
-  .navItem {
-    padding: 15px 0px;
     text-align: center;
-    background: #f5f5f5;
-    color: black;
-    display: block;
-    width: 100%;
-    text-decoration: none;
-    border-bottom: 1px solid #ebebeb;
-  }
+    padding: 50px;
+    padding-bottom: 35px;
+    font-size: 43px;
+}
 
-  .navItem:hover {
-    transform: none;
-    width: 100%;
-  }
+#content {
+    margin: 50px;
+}
 
-  #title{
+.post {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 50px 0;
+}
+
+.post-title {
+    margin: 0 0 25px 0;
     font-size: 20px;
-    line-height: 2.3;
-  }
-
-  .rss-button {
-    display: none;
-  }
-
-  #title::after{
-    margin-top: -14px;
-    margin-left: 65px;
-  }
-
-  #title:hover:after{
-    width: 130px;
-  }
-
-	#nav-mobile-button {
-		display: block;
-	}
-
 }
 
-@media only screen and (max-width:1020px){
-  #main, #header-contianer {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
+.post-url {
+    margin-top: 10px;
+    display: block;
 }
 
-.post-title{
-  margin-bottom: 5px;
+#social-links {
+    list-style: none;
+    text-align: center;
 }
 
-.post-data{
-  font-size: 12;
-  font-style: italic;
-}
-
-.post-image-background {
-  padding: 15px;
-  background: #e8e8e8;
-  border-radius: 5px;
-}
-
-.post-image-background.expand {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  margin: 0;
-  padding: 0;
-  background: rgba(0, 0, 0, 0.75);
-  display: flex;
-  justify-content: center;;
-  align-items: center;
-}
-
-.post-image{
-  margin: auto;
-  max-width: 100%;
-  cursor: -webkit-zoom-in;
-}
-
-.post-image-background.expand > .post-image {
-  max-width: 75%;
-  max-height: 75%;
-  cursor: -webkit-zoom-out;
-  margin: 0;
-}
-
-.post-image-alt {
-  margin: 10px;
-  display: block;
-  font-size: 12px;
-  font-style: italic;
-}
-
-.post-paragraph{
-  line-height: 1.75;
-  text-indent: 24px;
-  text-align: justify;
-  font-family: Taviraj, Slabo, serif;
-}
-
-.quote-block{
-  border-radius: 3px;
-  padding: 15px;
-  border: 3px solid #dedede;
-  background: #eaeaea;
-  font-size: 13px;
-  font-style: italic;
-  text-align: center;
-}
-
-.post-link{
-  color: #1a66f7;
-  text-decoration: none;
-
-}
-
-.post-link:hover{
-  text-decoration: underline;
-  color: #1442d9;
-}
-
-.rss-button{
-  margin: 8px;
-}
-
-#comment-box{
-  max-width: 680px;
-  margin: auto;
+.social-link {
+    display: inline-block;
+    padding: 0 10px;
 }
 
 /* Syntax Highlighting begin*/

@@ -1,43 +1,15 @@
----
-  layout: default
-  path: /
+--- 
+    layout: default 
+    path: / 
 ---
 
-{% for post in paginator.posts %}
-  <div class="post-display" itemtype="http://schema.org/Article">
-    <a href="{{ post.url  }}" class="post-display-link">
-      <h2 class="post-display-title" itemprop="name">{{ post.title }}</h2>
-      <span class="post-display-data" itemprop="dateCreated"> {{ post.date | date: "%b %-d, %Y" }} </span>
-      <p meta="description" class="post-display-excerpt" itemprop=""> {{ post.excerpt | truncatewords: 75 | strip_html }} </p>
-      <p href=" {{ post.url }} " class="post-display-bottom-link">Check it out</p>
-      <span class="line"></span>  
-    </a>
-  </div>
+
+{% for post in site.posts %}
+
+    <div class="post">
+        <h2 class="post-title">{{ post.title }}</h2>
+        <div class="post-body">{{ post.excerpt | truncatewords: 125 }}</div>
+        <a href="{{ post.url }}" class="post-url">Read more...</a>
+    </div>
+
 {% endfor %}
-
-{% if paginator.total_pages > 1 %}
-<!-- This is from the Jekyll pagination documentation. I couldn't come up with something else -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-  {% else %}
-    <span>&laquo; Prev</span>
-  {% endif %}
-
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <em>{{ page }}</em>
-    {% elsif page == 1 %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-    {% else %}
-      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-    {% endif %}
-  {% endfor %}
-
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-  {% else %}
-    <span>Next &raquo;</span>
-  {% endif %}
-</div>
-{% endif %}

@@ -2,16 +2,31 @@
     {% include standard-head.html %}
   <body>
 
-    {% include header.html %}
-
     <div id="main">
+      <header>
+        <h1 id="title">Erik Hallmark</h1>
+      </header>
+      
 
-      {{ content }}
+      <hr>
 
+      <div id="content">
+        {{ content }} 
+      </div>
 
+      <footer>
+
+        <ul id="social-links">
+          {% for social in site.data.social %}
+        
+            <li class="social-link">
+              <a href="{{ social.url }}" title="{{ social.username }}" target="_blank">{{ social.sitename }}</a>
+            </li>
+
+          {% endfor %}
+        </ul>
+
+      </footer>
     </div>
-    {% include footer.html %}
-    {% include scripts.html%}
-
   </body>
 </html>

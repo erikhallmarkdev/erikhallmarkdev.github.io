@@ -1,34 +1,8 @@
-{% assign description = page.excerpt %}
-<html>
-  {% include standard-head.html %}
-  <body>
+---
+    layout: default
+---
 
-    {% include header.html %}
-
-    <div id="main" itemtype="http://schema.org/Article">
-
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <!-- Responsive Ad -->
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-2541356049256563"
-           data-ad-slot="6399088332"
-           data-ad-format="auto"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-
-      <h2 class="post-title" itemprop="name">{{ page.title }}</h2>
-      <span class="post-data"> <span itemprop="dateCreated">{{ page.date | date: "%b %-d, %Y - %H:%M" }}</span> {% if page.author %} -- <span itemprop="author">{{ page.author }}</span> {% endif %}</span>
-      <span class="line"></span>
-      <span itemprop="articalBody">
-      {{ content }}
-      </span>
-
-      {% include comments.html%}
-    </div>
-    {% include footer.html %}
-    {% include scripts.html%}
-
-  </body>
-</html>
+<div class="post">
+    <h2 class="post-title">{{ page.title }}</h2>
+    <div class="post-body">{{ content }}</div>
+</div>
