@@ -40,6 +40,10 @@ body {
     font-size: 20px;
 }
 
+.post-data {
+    font-size: 11px;
+}
+
 .post-url {
     margin-top: 10px;
     display: block;

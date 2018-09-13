@@ -2,8 +2,10 @@
     layout: default
 ---
 
-<a href="/">Erik Hallmark</a> /
+<a href="/">Home</a> /
 <a href="{{ post.url }}">{{ page.title }}</a>
+
+<p class="post-data">{{page.author}} | {{page.date | date: "%b-%d-%Y %l:%M"}}</p>
 
 <div class="post">
     <h2 class="post-title">{{ page.title }}</h2>

@@ -8,6 +8,7 @@
 
     <div class="post">
         <h2 class="post-title">{{ post.title }}</h2>
+        <p class="post-data">{{ post.author }} | {{post.date | date: "%b-%d-%Y"}}</p>
         <div class="post-body">{{ post.excerpt | truncatewords: 125 }}</div>
         <a href="{{ post.url }}" class="post-url">Read more...</a>
     </div>
